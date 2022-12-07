@@ -26,8 +26,9 @@ const IndexPage = () => {
       <div>
             <Button className="headingbutton"  href="https://www.go2andaman.com/" type="link">Home </Button>{">"}
             <Button className="headingbutton"  href="https://www.go2andaman.com/andaman-nicobar-islands/" type="link">Andaman </Button>{">"} 
-              <Button className="headingbutton" type="link">Havelock</Button>
+            <Button className="headingbutton" type="link">Havelock</Button>
       </div>
+      <div className="paddingtopbottom"></div>
       <Header></Header>
     </div>
   );
