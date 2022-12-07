@@ -1,0 +1,22 @@
+{
+  "name": "mobx-next",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "post-update": "yarn upgrade --latest"
+  },
+  "dependencies": {
+    "antd": "^5.0.4", 
+    
+    "mobx": "6.3.10",
+    "mobx-react-lite": "3.2.3",
+    "next": "latest",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "description": ""
+}
