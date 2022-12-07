@@ -4,23 +4,26 @@
     border-bottom: solid 1px #e8e8e8;
     overflow: auto;
     box-shadow: 0 0 30px #f3f1f1;
+    
 }
 
 .logo {
     width: 150px;
-    float: left;
+    float:left;
 }
 
 .logo a {
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 20px;
     padding: 19px 20px;
     text-transform: capitalize;
 }
 
 .menuCon {
-    width: calc(100% - 150px);
-    float: left;
+    /* width: calc(100% - 150px); */
+    
+    float:inline-end;
+    justify-content:space-between;
 }
 
 .menuCon .ant-menu-item {
@@ -41,7 +44,7 @@
 }
 
 .menuCon .leftMenu {
-    float: left;
+    float: right;
 }
 
 .menuCon .rightMenu {
@@ -102,17 +105,41 @@
 .ant-drawer-body .ant-menu-horizontal>.ant-menu-item:hover {
     border-bottom-color: transparent;
 }
-
+.guide{
+    display:  none;
+}
+.nondrawer{
+    display: none;
+}
+a{
+    font-weight: bold;
+}
+span{
+    font-weight: bold;
+}
 @media (max-width: 767px) {
-    .barsMenu {
-        display: inline-block;
+    .menuBar {
+        align-items: center;
     }
-
+    .guide{
+        max-width: 5px;
+        display:none;
+    }
+    .drawer{
+        display: none;;
+    }
+    .nondrawer{
+        display: block;
+    }
+    .barsMenu {
+        padding: 0%;
+        display: inline-block;
+        /* justify-content: flex-start; */
+    }
     .leftMenu,
     .rightMenu {
         display: none;
     }
-
     .logo a {
         margin-left: -20px;
     }

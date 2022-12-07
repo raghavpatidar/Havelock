@@ -21,16 +21,7 @@ const IndexPage = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <h1>Books:</h1>
-      <h3>TotalBooks: {totalBooks}</h3>
-      <button onClick={fetchAndSetBooksOnClient}>Fetch on Client</button>
-      <input placeholder="search" type="text" onChange={handleOnInputChange} />
-      <hr />
-      <div style={{ display: "flex" }}>
-        {filteredBooks.map((book, index) => (
-          <BookCard key={index} book={book} />
-        ))}
-      </div>
+      <Header></Header>
     </div>
   );
 };
