@@ -3,8 +3,9 @@ import { useContext } from "react";
 import { MobxContext } from "./_app";
 import BookCard from "../components/BookCard";
 import Navbar from '../components/Navbar/index'
+import Header from '../components/Header'
 import { observer } from "mobx-react-lite";
-
+import {Button } from 'antd';
 const IndexPage = () => {
   const {
     totalBooks, 
@@ -21,6 +22,12 @@ const IndexPage = () => {
   return (
     <div>
       <Navbar></Navbar>
+      <div className="paddingtopbottom"></div>
+      <div>
+            <Button className="headingbutton"  href="https://www.go2andaman.com/" type="link">Home </Button>{">"}
+            <Button className="headingbutton"  href="https://www.go2andaman.com/andaman-nicobar-islands/" type="link">Andaman </Button>{">"} 
+              <Button className="headingbutton" type="link">Havelock</Button>
+      </div>
       <Header></Header>
     </div>
   );
