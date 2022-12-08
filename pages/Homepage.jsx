@@ -39,12 +39,11 @@ const Homepage = () => {
                  return (
                    <>
                   <li >
-                    <a  href={"#"+(idx+1)} className="tablecontent">
+                    <a  href={"#"+(idx+1)} >
                       
                     <p>{val.title}</p>
                     </a>
                     </li>
-                  {/* <p>{val.description}</p> */}
                 </>
               );
             }

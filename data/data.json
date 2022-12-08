@@ -262,6 +262,82 @@
         "description":"Diglipur only be accessed through Port Blair. There’s no provision to access Diglipur from Neil or Havelock. However, an alternate travel entry point can be drawn from Neil and Havelock via Rangat. Some private boat rides are available from Neil and Havelock to Rangat and you can enter Diglipur from there. However, this route is quite tricky and not supported by tourism so you are at the mercy of your service providers. So, be careful of you attempting such a thing.There you go the most bustling region of Andaman – Diglipur which will soon be a worthwhile travel destination in Andaman as plans of a second Andaman airport in Diglipur finalizes. So, think of all the exciting experiences you can try in this offbeat Andaman tourist destination."
       }
     ]
+  },
+  "TouristIslands" :{
+    "location" : [
+      {
+        "title" :"Port Blair – Capital City",
+        "url" :"https://www.go2andaman.com/islands/port-blair/"
+      },
+      {
+        "title" :"Havelock Island",
+        "url" :"https://www.go2andaman.com/islands/havelock/"
+      },
+      {
+        "title" :"Neil Island",
+        "url" :"https://www.go2andaman.com/islands/neil/"
+      },
+      {
+        "title" :"Baratang",
+        "url" :"https://www.go2andaman.com/islands/baratang/"
+      }
+    ]
+  },
+  "AndamandIslands" :{
+    "location" : [
+      {
+        "title" :"Entry Formalities",
+        "url" :"https://www.go2andaman.com/andaman-nicobar-islands/visa-entry-permits/"
+      },
+      {
+        "title" :"Geography",
+        "url" :"https://www.go2andaman.com/andaman-nicobar-islands/geography/"
+      },
+      {
+        "title" :"Flora & Fauna",
+        "url" :"https://www.go2andaman.com/andaman-nicobar-islands/flora-and-fauna/"
+      },
+      {
+        "title" :"Tourists Do’s & Dont’s",
+        "url" :"https://www.go2andaman.com/andaman-nicobar-islands/dos-and-donts/"
+      },
+      {
+        "title" :"How Safe is Andaman?",
+        "url" :"https://www.go2andaman.com/how-safe-is-andaman/"
+      }
+    ]
+  },
+  "PlacesToVisit" :{
+    "location" : [
+      {
+        "title" :"Cellular Jail",
+        "url" :"https://www.go2andaman.com/visit/cellular-jail/"
+      },
+      {
+        "title" :"Ross Island",
+        "url" :"https://www.go2andaman.com/visit/ross-island/"
+      },
+      {
+        "title" :"Radhanagar Beach",
+        "url" :"https://www.go2andaman.com/visit/radhanagar-beach-havelock/"
+      },
+      {
+        "title" :"Jolly Buoy",
+        "url" :"https://www.go2andaman.com/visit/jolly-buoy/"
+      },
+      {
+        "title" :"North Bay",
+        "url" :"https://www.go2andaman.com/visit/north-bay-island/"
+      },
+      {
+        "title" :"Natural Rock Bridge, Neil Island",
+        "url" :"https://www.go2andaman.com/visit/natural-rock-formation/"
+      },
+      {
+        "title" :"Barren Island",
+        "url" :""
+      }
+    ]
   }
   
 }

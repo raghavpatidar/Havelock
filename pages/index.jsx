@@ -48,11 +48,10 @@ const IndexPage = () => {
                       <Col xs={{ span: 24, offset: 0 }} lg={{ span: 12, offset: 2 }}>
                         <Homepage />
                        </Col>
-                      <Col xs={{ span: 24, offset: 0 }} lg={{ span: 9, offset: 1 }}>
+                      <Col xs={{ span: 24, offset: 0 }} lg={{ span: 10, offset: 0 }}>
                            <SideComp></SideComp>
                        </Col>
       </Row>
-
       <Footer/>
     </div>
   );
