@@ -245,6 +245,7 @@ const Homepage = () => {
           )}
         </ul>
       </Card>
+      <Divider />
       <>
        <Title id={9} level={4}>Eat/Dine/Night Life in Havelock</Title>
        <Card>
@@ -252,6 +253,7 @@ const Homepage = () => {
         <p>For cheaper meals, some hotels will let you buy bread, which you can toast in their kitchens. You can even try simple vegetarian and non-vegetarian thalis – cheap meals of plain rice, vegetables, dal(lentil soup), and meat at INR 150 – INR 200 per plate.</p>
        </Card>
       </>
+      <Divider />
       <>
        <Title  id={10} level={4}>Important info about Havelock</Title>
        <Card>
@@ -269,6 +271,7 @@ const Homepage = () => {
         </>
        </Card>
       </>
+      <Divider />
       <>
        <Title id={11} level={4}>Cost In Havelock</Title>
        <Card>
@@ -286,6 +289,7 @@ const Homepage = () => {
         </>
        </Card>
       </>
+      <Divider/>
       <>
        <Title id={12} level={4}>FAQs about Havelock</Title>
        <Card>
