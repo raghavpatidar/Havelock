@@ -1,4 +1,7 @@
 /* @import "~antd/dist/antd.css"; */
+body{
+    background-color: #f9f9f9;
+}
 .menuBar {
     padding: 0 20px;
     border-bottom: solid 1px #e8e8e8;
@@ -117,7 +120,15 @@ a{
 span{
     font-weight: bold;
 }
+@media (min-width:787px) {
+    .drawer {
+        display: block;
+    }
+}
 @media (max-width: 767px) {
+    .bottomlink{
+        display: none;
+    }
     .menuBar {
         align-items: center;
     }
@@ -148,7 +159,6 @@ span{
     .menuCon .ant-menu-submenu-title {
         padding: 1px 20px;
     }
-
     .logo a {
         padding: 10px 20px;
     }
@@ -213,3 +223,50 @@ span{
     padding: 0.5%;
 }
 
+.btn {
+    background-color: #01b46c !important;
+    color: #fff;
+}
+
+.btn :hover {
+    background-color: #01b46c !important;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    text-align: center;
+}
+
+.contained {
+    width: 50%;
+    height: 50%;
+    /* background-color: green; */
+    text-align: center;
+    display: inline-block;
+}
+
+.fbtn {
+    color: #000;
+    font-size: small;
+}
+
+.fbtn:hover {
+    color: #01b46c !important;
+}
+
+.bottom {
+    background-color: #D3D3D3;
+    padding: 2%;
+}
+
+.tablecontent{
+    color: #000;
+    font-weight:400;
+}
+.tablecontent:hover{
+    text-decoration: underline  #01b46c ;
+    color: #000;
+}

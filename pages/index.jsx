@@ -1,35 +1,59 @@
+import React, { useEffect } from "react";
 import { getSide, books } from "../utils";
 import { useContext } from "react";
 import { MobxContext } from "./_app";
-import BookCard from "../components/BookCard";
-import Navbar from '../components/Navbar/index'
-import Header from '../components/Header'
-import { observer } from "mobx-react-lite";
-import {Button } from 'antd';
+import Navbar from "../components/Navbar/index";
+import Header from "../components/Header";
+import Footer from '../components/Footer/Footer'
+import { Button } from "antd";
+import Homepage from "./Homepage";
+import { Col, Row } from "antd";
+import SideComp from "../components/SideComp";
+// import { Footer } from "antd/es/layout/layout";
+const data = require("../data/data.json");
+
 const IndexPage = () => {
-  const {
-    totalBooks, 
-    filteredBooks,
-    setSearchParam,
-    fetchAndSetBooksOnClient
-  } = useContext(MobxContext);
-  console.log("hello from Page component ", getSide());
-
-  const handleOnInputChange = (e) => {
-    setSearchParam(e.target.value);
-  };
-
+  const { setData } = useContext(MobxContext);
+  useEffect(() => {
+    setData(data);
+  }, []);
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar />
       <div className="paddingtopbottom"></div>
       <div>
-            <Button className="headingbutton"  href="https://www.go2andaman.com/" type="link">Home </Button>{">"}
-            <Button className="headingbutton"  href="https://www.go2andaman.com/andaman-nicobar-islands/" type="link">Andaman </Button>{">"} 
-            <Button className="headingbutton" type="link">Havelock</Button>
+        <Button
+          className="headingbutton"
+          href="https://www.go2andaman.com/"
+          type="link"
+        >
+          Home{" "}
+        </Button>
+        {">"}
+        <Button
+          className="headingbutton"
+          href="https://www.go2andaman.com/andaman-nicobar-islands/"
+          type="link"
+        >
+          Andaman{" "}
+        </Button>
+        {">"}
+        <Button className="headingbutton" type="link">
+          Havelock
+        </Button>
       </div>
       <div className="paddingtopbottom"></div>
-      <Header></Header>
+      <Header />
+        <Row >
+                      <Col xs={{ span: 24, offset: 0 }} lg={{ span: 12, offset: 2 }}>
+                        <Homepage />
+                       </Col>
+                      <Col xs={{ span: 24, offset: 0 }} lg={{ span: 9, offset: 1 }}>
+                           <SideComp></SideComp>
+                       </Col>
+      </Row>
+
+      <Footer/>
     </div>
   );
 };
@@ -41,12 +65,12 @@ export const getServerSideProps = async () => {
   return {
     props: {
       initialState: {
-        booksStore: {
-          books
-        }
-      }
-    }
+        dataStore: {
+          data,
+        },
+      },
+    },
   };
 };
 
-export default observer(IndexPage);
+export default IndexPage;

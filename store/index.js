@@ -1,16 +1,17 @@
 import { enableStaticRendering } from "mobx-react-lite";
-import BooksStore from "./Books";
+import DataStore from "./DataStore";
 
 enableStaticRendering(typeof window === "undefined");
 
 let clientStore;
 
 const initStore = (initData) => {
-  const store = clientStore ?? new BooksStore();
-  if (initData?.booksStore) store.hydrate(initData.booksStore);
+  const store = clientStore ?? new DataStore();
+  if (initData?.DataStore) store.hydrate(initData.DataStore);
 
   if (typeof window === "undefined") return store;
   if (!clientStore) clientStore = store;
+  console.log(store);
   return store;
 };
 

@@ -1,12 +1,11 @@
 import { useStore } from "../store";
 import { createContext } from "react";
 import { getSide } from "../utils";
-import './styles.css';
+import "./styles.css";
 
 export const MobxContext = createContext();
 
 const MyApp = (props) => {
-  console.log("hello from _app - ", getSide());
   const { Component, pageProps, err } = props;
   const store = useStore(pageProps.initialState);
   return (
