@@ -38,7 +38,7 @@ const SideComp = () => {
             )}
             </ul>
 
-        <Title className="paddingtopbottom" level={2} style={{color:"#01b46c" }}>Popular Andamam Islands</Title>
+        <Title className="paddingtopbottom" level={2} style={{color:"#01b46c" }}>About Andamam Islands</Title>
              <ul>
                 {data["AndamandIslands"]["location"].map(
                     (val , idx) => {
