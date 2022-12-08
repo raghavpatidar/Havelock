@@ -8,11 +8,9 @@ import YouTube from "react-youtube";
 var getYouTubeID = require("get-youtube-id");
 import { Image } from "antd";
 import { useContext } from "react";
-import { MobxContext } from "./_app";
+import { MobxContext } from "../pages/_app";
 import { Anchor } from "antd";
-import { Menu, Grid } from 'antd';
-const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
+import {  Grid } from 'antd';
 import { observer } from "mobx-react-lite";
 const { useBreakpoint } = Grid;
 const { Title } = Typography;
@@ -29,7 +27,7 @@ const Homepage = () => {
     return <></>;
   }
   return (
-    <Content style={{ padding: "50px" , textAlign:"" }}>
+    <Content style={{ padding: "" , textAlign:"" }} className='homecontent'>
       <Title id={0}  level={4}>Table of Content</Title>
       <Card>
         <ul>
@@ -271,7 +269,7 @@ const Homepage = () => {
        </Card>
       </>
       <>
-       <Title id={11}>Cost In Havelock</Title>
+       <Title id={11} level={4}>Cost In Havelock</Title>
        <Card>
         <>
            {data["Cost-in-Havelock"]["location"].map(
@@ -288,7 +286,7 @@ const Homepage = () => {
        </Card>
       </>
       <>
-       <Title id={12}>FAQs about Havelock</Title>
+       <Title id={12} level={4}>FAQs about Havelock</Title>
        <Card>
         <>
        <ul>

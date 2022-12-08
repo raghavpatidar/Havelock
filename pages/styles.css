@@ -162,6 +162,17 @@ span{
     .logo a {
         padding: 10px 20px;
     }
+    .chooseimg {
+          max-width: 50px;
+          max-height: 50px;
+    }
+    .choosecard{
+        max-width: 60px;
+        max-height: fit-content;
+    }
+    .homecontent{
+        padding: 5px;
+    }
 }
 
 /* head css */
@@ -270,3 +281,4 @@ span{
     text-decoration: underline  #01b46c ;
     color: #000;
 }
+

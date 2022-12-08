@@ -19,7 +19,7 @@ const SideComp = () => {
     return <></>;
   }
   return (
-    <Content style={{ padding: "50px" , color:"#01b46c" }}>
+    <Content style={{ padding: "0px" , color:"#01b46c" }}>
        <Card>
         <Title level={2} style={{color:"#01b46c" }}>Popular Tourists Islands</Title>
              <ul>

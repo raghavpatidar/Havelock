@@ -6,10 +6,9 @@ import Navbar from "../components/Navbar/index";
 import Header from "../components/Header";
 import Footer from '../components/Footer/Footer'
 import { Button } from "antd";
-import Homepage from "./Homepage";
+import Homepage from "../components/Homepage";
 import { Col, Row } from "antd";
 import SideComp from "../components/SideComp";
-// import { Footer } from "antd/es/layout/layout";
 const data = require("../data/data.json");
 
 const IndexPage = () => {
@@ -51,7 +50,7 @@ const IndexPage = () => {
                       <Col xs={{ span: 24, offset: 0 }} lg={{ span: 10, offset: 0 }}>
                            <SideComp></SideComp>
                        </Col>
-      </Row>
+       </Row>
       <Footer/>
     </div>
   );
