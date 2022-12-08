@@ -65,6 +65,7 @@ const Homepage = () => {
         you need here, but at a slower pace. And even though it is one of the
         most visited islands in the Andamans it sees only a fraction of the
         visitors that crowd other paradise destinations around the globe.
+       {/* <br></br> */}
       </Card>
       <Divider />
       <Title id={2} level={4} style={{textAlign:"center"}}>How long to stay in Havelock?</Title>
