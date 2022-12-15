@@ -21,15 +21,15 @@ const SideComp = () => {
   return (
     <Content style={{ padding: "0px" , color:"#01b46c" }}>
        <Card>
-        <Title level={2} style={{color:"#01b46c" }}>Popular Tourists Islands</Title>
+        <Title level={3} style={{color:"#01b46c",textAlign:"center", lineHeight:"90%"}}>Popular Tourists Islands</Title>
              <ul>
                 {data["TouristIslands"]["location"].map(
                     (val , idx) => {
                         return (
                             <>
-                             <li >
+                             <li style={{lineHeight:"80%"}} >
                                <a href={val.url}>
-                                     <p style={{color:"#01b46c" }}>{val.title}</p>
+                                     <p style={{color:"#01b46c", fontWeight:450 }}>{val.title}</p>
                                </a>
                             </li>
                         </>
@@ -38,15 +38,15 @@ const SideComp = () => {
             )}
             </ul>
 
-        <Title className="paddingtopbottom" level={2} style={{color:"#01b46c" }}>About Andamam Islands</Title>
+        <Title className="paddingtopbottom" level={3} style={{color:"#01b46c" ,textAlign:"center" }}>About Andamam Islands</Title>
              <ul>
                 {data["AndamandIslands"]["location"].map(
                     (val , idx) => {
                         return (
                             <>
-                             <li >
+                             <li style={{lineHeight:"80%"}} >
                                <a href={val.url}>
-                                     <p style={{color:"#01b46c" }}>{val.title}</p>
+                                     <p style={{color:"#01b46c", fontWeight:450 }}>{val.title}</p>
                                </a>
                             </li>
                         </>
@@ -54,15 +54,15 @@ const SideComp = () => {
             }
             )}
             </ul>
-        <Title className="paddingtopbottom" level={2} style={{color:"#01b46c" }}>Places To Visit</Title>
+        <Title className="paddingtopbottom" level={3} style={{color:"#01b46c" ,textAlign:"center" }}>Places To Visit</Title>
              <ul>
                 {data["PlacesToVisit"]["location"].map(
                     (val , idx) => {
                         return (
                             <>
-                             <li >
+                             <li style={{lineHeight:"80%"}} >
                                <a href={val.url}>
-                                     <p style={{color:"#01b46c" }}>{val.title}</p>
+                                     <p style={{color:"#01b46c", fontWeight:450 }}>{val.title}</p>
                                </a>
                             </li>
                         </>

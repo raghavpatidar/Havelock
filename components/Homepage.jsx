@@ -29,16 +29,15 @@ const Homepage = () => {
   return (
     <Content style={{ padding: "" , textAlign:"" }} className='homecontent'>
       <Title id={0}  level={4}>Table of Content</Title>
-      <Card>
-        <ul>
+      <Card >
+        <ul style={{lineHeight:"80%"}}>
           
              {data["Table-of-content"]["location"].map(
                (val , idx) => {
                  return (
                    <>
-                  <li >
-                    <a  href={"#"+(idx+1)} >
-                      
+                    <li >
+                    <a className="tablecontent" style={{color:"black" , fontWeight:"400"}} href={"#"+(idx+1)} >
                     <p>{val.title}</p>
                     </a>
                     </li>

@@ -13,7 +13,7 @@ const Carousels = () => {
             <div className="container" >
                 <div className="contained" >
                       <Carousel autoplay >
-                        <div >
+                        <div style={{height:"max-content"}} >
                              <p>Landing onto Ross Island from the ferry I didn&#8217;t have huge expectations. I have interest in the history of the place so was happy enough reading through the information boards and taking a walk around the island, seeing the ruins of old buildings and imagining what life would have been like here in the 1850s when at some point it was even dubbed the Paris of the East. There is so much history and almost a melancholy to the place imagining what went on here ~200 years ago.</p>
                              <p>The walks around the small island in that sense are quite serene. It is not a ghost town but an entire ghost island albeit a small one.</p>
                              <p>The big surprise to me was the light and sound show in the evening. I had a pre conceived notion of a fairly boring and standard show but boy was I wrong !</p>

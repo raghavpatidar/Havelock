@@ -165,14 +165,11 @@ span{
     .chooseimg {
           max-width: 50px;
           max-height: 50px;
-    }
-    .choosecard{
-        max-width: 60px;
-        max-height: fit-content;
-    }
+    };
     .homecontent{
         padding: 5px;
     }
+    
 }
 
 /* head css */
@@ -246,15 +243,13 @@ span{
 
 .container {
     width: 100%;
-    height: 100%;
-    /* background-color: red; */
+    height: fit-content;
     text-align: center;
 }
 
 .contained {
     width: 50%;
-    height: 50%;
-    /* background-color: green; */
+    height: fit-content;
     text-align: center;
     display: inline-block;
 }
@@ -265,7 +260,7 @@ span{
 }
 
 .fbtn:hover {
-    color: #01b46c !important;
+    color: #01b46c !important
 }
 
 .bottom {
@@ -282,3 +277,50 @@ span{
     color: #000;
 }
 
+
+.care{
+    text-align: center;
+    display: flex;
+    justify-content:space-evenly;
+}
+.carecard{
+    font-size: 15px;
+    border-radius: 0;
+    box-shadow: none !important;
+    max-width: 200px;
+}
+
+.carecard img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.cardes{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+@media (max-width: 695px) {
+    .cardes{
+        padding: 0;
+    }
+    .contained{
+        width: 90%;
+    }
+}
+
+.choosecard img{
+    width: 70px;
+    height: 70px;
+}
+.choosecard{
+    font-size: 15px;
+    border-radius: 0;
+    box-shadow: none !important;
+    max-width: 200px;
+}
+.cardimg{
+    width: 30px;
+    height: 30px;
+}
